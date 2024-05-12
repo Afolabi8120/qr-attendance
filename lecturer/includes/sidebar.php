@@ -22,7 +22,7 @@
                      <a href="courses-list" class="nav-link">
                         <i class="nav-icon fa fa-folder-open"></i>
                         <p>
-                           Attendance List
+                           Attendance Record
                         </p>
                      </a>
                   </li>

@@ -79,6 +79,7 @@
                   <div class="card card-info">
                      <div class="card-header" style="background-color: green;">
 						</i> Student(s) Attendance List for <?= strtoupper($course_code); ?></i>
+                  <a href="export-excel?course_code=<?= $course_code; ?>&session=<?= $session; ?>&semester=<?= $semester; ?>&_date=<?= $_date; ?>" class="btn btn-sm btn-info">Download as Excel</a>
                      </div>
                      <br>
                      <div class="col-md-12 mt-3">
@@ -90,6 +91,7 @@
                                  <th>Matric No</th>
                                  <th>Full Name</th>
                                  <th>Date</th>
+                                 <th>Attendance Count</th>
                                  <th>Action</th>
                               </tr>
                            </thead>
@@ -107,6 +109,7 @@
                                  <td><?= $getattendance[1]; ?></td>
                                  <td><?= ucwords($getStudentInfo->fullname); ?></td>
                                  <td><?= $getattendance[4]; ?></td>
+                                 <td><?= $user->countTotalStudentAttendance($getattendance[1],$course_code,$semester,$session); ?></td>
                                  <td class="text-center">
                                        <a href="print-attendance?sid=<?= $getattendance[1]; ?>&course_code=<?= $getattendance[3]; ?>&session=<?= $getattendance[7]; ?>&semester=<?= $getattendance[8]; ?>" class="btn btn-info btn-sm mb-2">Print Attendance</a>
                                  </td>

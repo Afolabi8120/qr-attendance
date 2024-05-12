@@ -117,6 +117,19 @@
         	return true;
         }
 
+        public function countTotalStudentAttendance($matricno,$course_code,$semester,$session){
+			$stmt = $this->pdo->prepare("SELECT * FROM `tblattendance` WHERE `matricno` = :matricno AND `course_code` = :course_code AND `semester` = :semester AND `session` = :session ");
+			$stmt->bindParam(":matricno", $matricno, PDO::PARAM_STR);
+        	$stmt->bindParam(":course_code", $course_code, PDO::PARAM_STR);
+        	$stmt->bindParam(":semester", $semester, PDO::PARAM_STR);
+        	$stmt->bindParam(":session", $session, PDO::PARAM_STR);
+			$stmt->execute();
+            
+            $count = $stmt->rowCount();
+
+        	return $count;
+		}
+
 	}
 
 ?>

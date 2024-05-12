@@ -42,7 +42,7 @@
                         </p>
                      </a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                      <a href="attendance" class="nav-link">
                         <i class="nav-icon fa fa-folder"></i>
                         <p>
@@ -57,7 +57,7 @@
                            Attendance List
                         </p>
                      </a>
-                  </li>
+                  </li> -->
                   <li class="nav-item">
                      <a href="logout" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
