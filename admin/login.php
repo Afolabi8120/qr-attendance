@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="camera/asset/fontawesome/css/all.min.css">
       <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
    </head>
-   <body>
+   <body style="background-color: powderblue;">
       <div class="container-fluid">
          <h2 class="mt-3 mb-3 text-center h1">Administrator Login</h2>
          <div class="row">

@@ -36,7 +36,7 @@
 
         .card {
             border-radius: 10px;
-            border: 2px solid #243F60;
+            border: 2px solid #ccc;
             height: 323px;
             width: 204px;
             float: left;
@@ -284,21 +284,22 @@
             </div>
         </div>
         <div class="card back blue">
-            <h3>If Found Please Return The Card To</h3>
+            <img src="../asset/img/poly.png" height="50px" width="50px" style="margin-top: 5px;">
+            <h5>If Found Please Return The Card To</h5>
             <img src=""/>
             <h2>THE POLYTECHNIC IBADAN</h2>
-            <span class="address" style="font-weight: normal;">22, Sapa Street, Lagos State,
-                    <br /> Lagos State.
+            <span class="address" style="font-size: 10px;margin-bottom: 3px;">P.M.B 22, U.I Post Office, Ibadan
+                    <br /> Oyo State.
                 </span>
             <center>
-                <img src="../image/signa.png" height="30" width="100" />
-                <span style="font-weight: normal;">Authorized Signature</span>
+                <!-- <img src="../image/signa.png" height="30" width="100" /> -->
+                <span style="font-size: 10px;margin-bottom: 3px;">Authorized Signature</span>
             </center>
-            <a href="#" style="font-weight: normal;">www.polyib.edu.ng</a>
-            <span style="font-weight: normal;">Email: info@polyib.edu.ng</span>
+            <a href="#" style="font-size: 10px;margin-bottom: 3px;">www.polyib.edu.ng</a>
+            <span style="font-size: 10px;">Email: info@polyib.edu.ng</span>
             <br>
             <div class="student_pic">
-                <?php echo $globalclass->generateQRCode($QRCODE); ?>
+                <?php #echo $globalclass->generateQRCode($QRCODE); ?>
             </div>
 
         </div>
